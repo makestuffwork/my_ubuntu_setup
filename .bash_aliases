@@ -59,6 +59,8 @@ alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file
 #   ------------------------------------------
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 
+alias ll='ls -alrt'
+
 #   mans:   Search manpage given in agument '1' for term given in argument '2' (case insensitive)
 #           displays paginated result with colored search terms and two lines surrounding each hit.             Example: mans mplayer codec
 #   --------------------------------------------------------------------
