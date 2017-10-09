@@ -14,9 +14,9 @@ set diffopt=filler,iwhite,context:2
 :set printoptions=left:36pt,right:36pt,top:36pt,bottom:36pt,syntax:a,number:y,wrap:y,duplex:long,paper:letter,portrait:y
 :set pfn=courier_new:h8
 
-" Highlight lines >100 chars 
-highlight OverLength ctermbg=red ctermfg=white guibg=#b5b5b5 
-match OverLength /\%101v.\+/ 
+" Highlight lines >100 chars
+highlight OverLength ctermbg=red ctermfg=white guibg=#b5b5b5
+match OverLength /\%101v.\+/
 
 " Trailing Whitespace highlighting
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -35,7 +35,7 @@ autocmd FileType bzl,blazebuild AutoFormatBuffer buildifier
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1 
+let g:miniBufExplModSelTarget = 1
 
 au filetype c,cpp,verilog	    let b:comment_leader = '// '
 au filetype sh,make,tcl,dtcl	    let b:comment_leader = '# '
@@ -63,7 +63,7 @@ func DiffSetup()
   wincmd =
 "  winpos 0 0
 endfun
- 
+
 if &diff
   autocmd VimEnter * call DiffSetup()
 endif
@@ -99,7 +99,3 @@ else
     endfunction
 endif
 
-if has("gui_running")
-    nmap ½ :call FontSizeMinus()<CR>
-    nmap « :call FontSizePlus()<CR>
-endif
