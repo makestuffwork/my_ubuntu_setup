@@ -68,7 +68,7 @@ if &diff
   autocmd VimEnter * call DiffSetup()
 endif
 
-set guifont=Monospace\ 11
+set guifont=Ubuntu\ Mono\ 11
 if has("unix")
    function! FontSizePlus ()
      let l:gf_size_whole = matchstr(&guifont, '\( \)\@<=\d\+$')
